@@ -33,10 +33,11 @@ MYSQL_DATABASE_NAME[0]="" # list of database names that will be backed up. if yo
 
 # list of files and directories that will be backed up in the tar backup
 BACKUP_LIST[0]="/var/www/"
-BACKUP_LIST[1]="/etc/apache2/sites-available/"
-BACKUP_LIST[2]="/etc/fstab"
+BACKUP_LIST[1]="/var/spool/cron/"
+BACKUP_LIST[2]="/etc/apache2/sites-available/"
 BACKUP_LIST[3]="/etc/letsencrypt/live/"
-BACKUP_LIST[4]="/var/spool/cron/"
+BACKUP_LIST[4]="/etc/fstab"
+BACKUP_LIST[5]="/etc/sudoers"
 
 KEEP_BACKUPS_FOR="7" # days to store daily local backups
 KEEP_MONTHLY_BACKUPS_FOR="6" # number of monthly backups to keep (1st day of month)
